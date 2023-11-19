@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Корзина</title>
+	<link rel="stylesheet" href="./assets/style/normalize.css">
+	<link rel="stylesheet" href="./assets/style/style.css">
+</head>
+
+<body>
+	<section class="container">
+		<h1 class="title">Корзина</h1>
+		<div class="wrapper">
+			<div class="item">
+				<div class="item__media">
+					<img id="coat" class="item__img" src="./assets/imgs/Шуба.webp" alt="Шуба из искуственнного меха" />
+				</div>
+				<div class="item__description">
+					<p class="item__name">Шуба из искуственнного меха</p>
+					<p class="item__brand">Бренд: <span>LIME</span></p>
+					<p class="item__color">Цвет: <span>Бежевый</span></p>
+					<p class="item__size">Размер: <span>S</span></p>
+					<p class="item__number">Количество: <span class="number">1</span></p>
+				</div>
+				<span id="coatPrice" class="item__price">15999</span>
+			</div>
+			<div class="item">
+				<div class="item__media">
+					<img id="sweater" class="item__img" src="./assets/imgs/Свитер_белый.webp" alt="Свитер белый" />
+				</div>
+				<div class="item__description">
+					<p class="item__name">Свитер</p>
+					<p class="item__brand">Бренд: <span>Lacoste</span></p>
+					<p class="item__color">Цвет: <span>Белый</span></p>
+					<p class="item__size">Размер: <span>S</span></p>
+					<p class="item__number">Количество: <span class="number">1</span></p>
+				</div>
+				<span id="sweaterPrice" class="item__price">19990</span>
+			</div>
+			<div class="item">
+				<div class="item__media">
+					<img id="trousers" class="item__img" src="./assets/imgs/Брюки_кожаные.webp" alt="Брюки кожаные" />
+				</div>
+				<div class="item__description">
+					<p class="item__name">Брюки кожаные</p>
+					<p class="item__brand">Бренд: <span>Oodji</span></p>
+					<p class="item__color">Цвет: <span>Бежевый</span></p>
+					<p class="item__size">Размер: <span>S</span></p>
+					<p class="item__number">Количество: <span class="number">1</span></p>
+				</div>
+				<span id="trousersPrice" class="item__price">2790</span>
+			</div>
+			<div class="item">
+				<div class="item__media">
+					<img id="boots" class="item__img" src="./assets/imgs/Ботинки.webp" alt="Ботинки" />
+				</div>
+				<div class="item__description">
+					<p class="item__name">Ботинки</p>
+					<p class="item__brand">Бренд: <span>Bona Mente</span></p>
+					<p class="item__color">Цвет: <span>Бежевый</span></p>
+					<p class="item__size">Размер: <span>38</span></p>
+					<p class="item__number">Количество: <span class="number">1</span></p>
+				</div>
+				<span id="bootsPrice" class="item__price">11699</span>
+			</div>
+			<div class="item">
+				<div class="item__media">
+					<img id="handbag" class="item__img" src="./assets/imgs/Рюкзак.webp" alt="Рюкзак" />
+				</div>
+				<div class="item__description">
+					<p class="item__name">Рюкзак</p>
+					<p class="item__brand">Бренд: <span>Fabretti</span></p>
+					<p class="item__color">Цвет: <span>Бежевый</span></p>
+					<p class="item__size">Размер: <span>26х29х13 см</span></p>
+					<p class="item__number">Количество: <span class="number">1</span></p>
+				</div>
+				<span id="handbagPrice" class="item__price">17790</span>
+			</div>
+		</div>
+		<div class="discount">
+			<button class="btn">Использовать купон 20%</button>
+			<p class="total"></p>
+		</div>
+	</section>
+	<script src="./script.js"></script>
+</body>
+
+</html>

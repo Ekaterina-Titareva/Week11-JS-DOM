@@ -1,0 +1,176 @@
+
+@font-face {
+    font-family: "NEXT ART";
+    src: url(../fonts/NEXTART_Bold.woff2) format("woff2"), url(../fonts/NEXTART_Bold.woff) format("woff");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    src: url(../fonts/NunitoSans_Regular.woff2) format("woff2"), url(../fonts/NunitoSans_Regular.woff) format("woff");
+    font-weight: 400;
+}
+
+* {
+    font-family: "Nunito Sans", Arial, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1197px;
+    min-height: 100vh;
+    height: 100%;
+    background-color: rgba(16, 28, 190, 0.183);
+}
+
+
+.title{
+    align-self: center;
+    font-family: "NEXT ART", Arial, sans-serif;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+.wrapper{
+    display: grid;
+}
+
+.item{
+    display: grid;
+    grid-template-columns: 1fr 70% 1fr;
+    margin: 10px 0;
+    padding: 5px 5px;
+    background-color: rgba(255, 255, 255, 0.505);
+    border: 1px solid rgba(0, 0, 0, 0.163);
+    border-radius: 5px;
+    box-shadow: 0 0 1vw 0 rgba(24, 18, 30, 0.151);
+}
+
+.item:hover{
+    box-shadow: 0 0 1vw 0 rgba(24, 18, 30, 0.667);
+}
+
+.item__media{
+    justify-self: center;
+    width: 100px;
+    height: 120px;
+}
+
+.item__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.item__description{
+    word-wrap: normal;
+    margin-left: 20px;
+}
+
+.item__name{
+    margin: 0;
+    padding: 5px 0;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.item__name:hover {
+    text-decoration: underline 1px solid rgba(16, 28, 190, 0.927);
+    color: rgba(16, 28, 190, 0.927);
+    text-underline-offset: 3px;
+    cursor: pointer;
+}
+
+.item__brand, .item__color, .item__size, .item__number {
+    margin: 0;
+    padding: 1px 0;
+}
+
+.item__number {
+    font-weight: 700;
+}
+
+.number::before {
+    content: url(../icons/minus.svg);
+    padding: 0 5px;
+}
+
+.number::after {
+    content: url(../icons/plus.svg);
+    padding: 0 5px;
+}
+
+.item__price{
+    align-self: center;
+    padding-right: 20px;
+    font-family: "NEXT ART", Arial, sans-serif;
+}
+
+.discount{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.btn {
+    font-family: "NEXT ART", Arial, sans-serif;
+    align-self: center;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    min-height: 60px;
+    background: linear-gradient(to bottom, rgba(16, 28, 190, 0.927), rgba(16, 28, 190, 0.566));
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Эффект при наведении курсора */
+.btn:hover {
+    background: linear-gradient(to bottom, rgba(16, 28, 190, 0.566), rgba(16, 28, 190, 0.927));
+}
+
+/* Эффект при нажатии кнопки */
+.btn:active {
+    background: rgb(16, 28, 190);
+}
+
+.total{
+    font-family: "NEXT ART", Arial, sans-serif;
+    font-size: 20px;
+}
+.total::after, .item__price::after {
+	content: ' руб.';
+}
+.total::before {
+	content: 'Итого ';
+}
+
+.discount-price {
+    color: rgba(16, 28, 190, 0.927);
+}
+
+@media screen and (max-width: 600px) {
+.item{
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 10px;
+}
+
+.item__description {
+    max-width: 180px;
+}
+
+.discount{
+    flex-direction: column;
+    align-items: center;
+}
+}
