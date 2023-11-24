@@ -11,13 +11,21 @@ function createTask() {
 
 document.querySelector('.btn').onclick = createTask;
 
-function checkTask(evt) {
-	taskList.addEventListener('click', function(evt) {
-		if (evt.target.tagName === 'LI') {
-		// Код, который будет выполнен при клике на элемент <li>
-		evt.target.classList.toggle('completed'); // переключение класса
-	}
-	});
-}
+// function checkTask(evt) {
+// 	taskList.addEventListener('click', function(evt) {
+// 		if (evt.target.tagName === 'LI') {
+// 		// Код, который будет выполнен при клике на элемент <li>
+// 		evt.target.classList.toggle('completed'); // переключение класса
+// 	}
+// 	});
+// }
 
-taskList.addEventListener('click', checkTask);
+// taskList.addEventListener('click', checkTask);
+
+
+taskList.addEventListener('click', function(evt) {
+	if (evt.target.tagName === 'LI') {
+	// Код, который будет выполнен при клике на элемент <li>
+	evt.target.classList.toggle('completed'); // переключение класса
+}
+});
